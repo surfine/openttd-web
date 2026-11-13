@@ -1,0 +1,10 @@
+{
+  "name": "openttd-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "OpenTTD 15.3 in a browser page (WebAssembly), with OpenGFX and a CJK pixel font packed in.",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "start": "python3 -m http.server 8080"
+  }
+}
