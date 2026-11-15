@@ -2,6 +2,12 @@
 
 在浏览器页面里运行 OpenTTD 15.3 的 WebAssembly 构建（`SOURCE.txt`，引自 `build/build.md`：版本「15.3（cdn.openttd.org 的 `openttd-15.3-source.tar.xz`）」，许可「GPLv2」）。
 
+## 截图
+
+在 AI System 6 桌面里实际运行时截取，左为 Classic，右为 Liquid Glass。
+
+<p><img src="screenshots/openttd-classic.png" width="49%" alt="OpenTTD · Classic"> <img src="screenshots/openttd-liquid-glass.png" width="49%" alt="OpenTTD · Liquid Glass"></p>
+
 基础图形 OpenGFX 8.0（GPLv2）与 Fusion Pixel 12px zh_hans 字体（OFL-1.1，v2026.08.11）在链接时打进 `openttd.data`（`build/build.md`）。音效与音乐关闭：上游 wasm 构建使用空音效与空音乐驱动（`build/build.md`）。
 
 存档与配置保存在引擎的浏览器存储里。首次运行且尚无配置时，shell 页面向 IDBFS 写入默认 `openttd.cfg`（`shell.js`；`SOURCE.txt`／`build/build.md`）。页面提示：「存档保存在本浏览器内。清除网站数据会删除存档。」（`shell.js`）。

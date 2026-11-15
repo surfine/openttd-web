@@ -2,6 +2,12 @@
 
 A browser page that runs OpenTTD 15.3 as WebAssembly (`SOURCE.txt`, quoting `build/build.md`: version “15.3 (`openttd-15.3-source.tar.xz` from cdn.openttd.org)”, licence “GPLv2”).
 
+## Screenshots
+
+Captured running inside the AI System 6 desk: Classic on the left, Liquid Glass on the right.
+
+<p><img src="screenshots/openttd-classic.png" width="49%" alt="OpenTTD · Classic"> <img src="screenshots/openttd-liquid-glass.png" width="49%" alt="OpenTTD · Liquid Glass"></p>
+
 Base graphics OpenGFX 8.0 (GPLv2) and the Fusion Pixel 12px zh_hans font (OFL-1.1, v2026.08.11) are packed into `openttd.data` at link time (`build/build.md`). Sound and music stay off: the upstream wasm build uses null sound and music drivers (`build/build.md`).
 
 Saves and configuration live in the engine’s browser storage. The shell page seeds a default `openttd.cfg` into IDBFS on first run when none exists yet (`shell.js`; `SOURCE.txt` / `build/build.md`). The page tells the player: “Saves live in this browser. Clearing site data deletes them.” (`shell.js`).
